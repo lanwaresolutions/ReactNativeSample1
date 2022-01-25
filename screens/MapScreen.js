@@ -13,10 +13,14 @@ const initialRegionValue = {
   longitudeDelta: 0.0421,
 };
 
+/**
+ * Map Screen
+ */
 function MapScreen({ navigation, route }) {
   const title = route.params?.title;
   const latlng = route.params?.latlng;
   const area = route.params?.area;
+
   const [region, setRegion] = React.useState({
     latitude: latlng[0],
     longitude: latlng[1],
@@ -24,6 +28,9 @@ function MapScreen({ navigation, route }) {
     longitudeDelta: 0.0421,
   });
 
+  /**
+   * Update the region when the latitude and longitude are updated
+   */
   const onRegionChange = (region) => {
     setRegion(region);
   };
