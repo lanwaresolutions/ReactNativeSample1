@@ -2,12 +2,15 @@ import * as React from "react";
 
 import DetailScreen from "../screens/DetailScreen";
 import Header from "../components/Header";
-import HomeScreen from "../screens/HomeScreen";
 import MapScreen from "../screens/MapScreen";
 import { createStackNavigator } from "@react-navigation/stack";
 
 const Stack = createStackNavigator();
 
+/**
+ * AppNavigator
+ * Add screen routes here
+ */
 function AppNavigator() {
   return (
     <Stack.Navigator
